@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+:root{
+    --transparent : #00000000;
+    --primary: #222831;
+    --secondary : #393E46;
+    --elements : #00ADB5;
+    --font-color : #EEEEEE;
+    --font-family: 'Playpen Sans', cursive;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    color: var(--font-color);
+    background-color: var(--transparent);
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid magenta; */
+}
+
+/* Nav Styles */
+nav{
+    position: absolute;
+    font-family: var(--font-family);
+    font-weight: 800;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+}
+nav div{
+    margin: 10px;
+    padding: 10px;
+}
+.name{
+    padding: 0 0 0 100px;
+    flex-grow: 1;
+    font-size: 2em;
+}
+
+
+/* Image Holder */
+.dp{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+
+
+/* Scroll Up */
+.top-scroll div img{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 10px;
+    right: 10px;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 30px;
+}
+.top-scroll div img:hover{
+    background-color: #888;
+    color: invert;
+    transition: background-color 0.5s ;
+}
+
+
+/* Socials Tab */
+div.social{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    height: 150px;
+    width: 40px;
+    top: 30vh;
+}
+div.sm img{
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+div.sm img:hover{
+    background-color: var(--primary);
+    box-shadow: 0 0 10px white;
+    transition-property: background-color, box-shadow;
+    transition: 200ms ease-in;
+}
+
+
+
+/* Main Content Styles index.html */
+html{
+    background-image: url(Assets/bg.png);
+}
+
+main.index{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+}
+.textbox{
+    background-color:#222831cc;
+    border-radius: 30px;
+    border: 5px solid var(--secondary);
+    padding: 30px;
+    width: 900px;
+}
+main.index p{
+    padding: 5px;
+}
+main.index p a{
+    text-decoration: none;
+    font-weight: 870;
+}
+main.index p a:hover{
+    text-shadow: 0 0 10px white;
+}
+
+
+/* Main content about.html */
+main.about{
+    padding: 150px 100px;
+}
+main.about div{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+    background-color: #222831cc;
+    border: 5px solid #393E46;
+    border-radius: 40px;
+}
+
+main.about div h2{
+    margin-top: 20px;
+}
+
+main.about a:hover{
+    text-shadow: 0 0 10px white;
+}
+
