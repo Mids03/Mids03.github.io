@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
 
 
-:root{
-    --transparent : #00000000;
+:root {
+    --transparent: #00000000;
     --primary: #222831;
-    --secondary : #393E46;
-    --elements : #00ADB5;
-    --font-color : #EEEEEE;
+    --secondary: #393E46;
+    --elements: #00ADB5;
+    --font-color: #EEEEEE;
     --font-family: 'Playpen Sans', cursive;
 }
-html{
+
+html {
     scroll-behavior: smooth;
+    background-image: url(Assets/bg.png);
 }
 
-*{
+* {
     box-sizing: border-box;
     font-family: var(--font-family);
     color: var(--font-color);
@@ -24,7 +26,7 @@ html{
 }
 
 /* Nav Styles */
-nav{
+nav {
     position: absolute;
     font-family: var(--font-family);
     font-weight: 800;
@@ -34,14 +36,17 @@ nav{
     justify-content: flex-end;
     align-items: center;
 }
-nav a{
+
+nav a {
     text-decoration: none;
 }
-nav div{
+
+nav div {
     margin: 10px;
     padding: 10px;
 }
-.name{
+
+.name {
     padding: 0 0 0 100px;
     flex-grow: 1;
     font-size: 2em;
@@ -49,7 +54,7 @@ nav div{
 
 
 /* Image Holder */
-.dp{
+.dp {
     width: 100px;
     height: 100px;
     border-radius: 100px;
@@ -61,7 +66,7 @@ nav div{
 
 
 /* Scroll Up */
-.top-scroll div img{
+.top-scroll div img {
     position: fixed;
     width: 40px;
     height: 40px;
@@ -71,15 +76,15 @@ nav div{
     padding: 10px;
     border-radius: 30px;
 }
-.top-scroll div img:hover{
+
+.top-scroll div img:hover {
     background-color: #888;
-    color: invert;
-    transition: background-color 0.5s ;
+    transition: background-color 0.5s;
 }
 
 
 /* Socials Tab */
-div.social{
+div.social {
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -88,13 +93,14 @@ div.social{
     width: 40px;
     top: 30vh;
 }
-div.sm img{
+
+div.sm img {
     width: 40px;
     height: 40px;
     border-radius: 6px;
 }
 
-div.sm img:hover{
+div.sm img:hover {
     background-color: var(--primary);
     box-shadow: 0 0 10px white;
     transition-property: background-color, box-shadow;
@@ -103,43 +109,48 @@ div.sm img:hover{
 
 
 
-/* Main Content Styles index.html */
-html{
-    background-image: url(Assets/bg.png);
-}
+/* Main Content index.html */
 
-main.index{
+main.index {
     display: flex;
-    width: 100vw;
-    height: 100vh;
-    align-items: center;
+    margin: auto;
+    width: 90vw;
+    height: 90vh;
+    align-items: flex-start ;
     justify-content: center;
-
 }
-.textbox{
-    background-color:#222831cc;
+
+.textbox {
+    display: flex;
+    flex-direction: column;
+    background-color: #222831cc;
     border-radius: 30px;
     border: 5px solid var(--secondary);
+    margin-top: 100px;
     padding: 30px;
-    width: 900px;
+    width: 90vw;
 }
-main.index p{
+
+main.index p {
     padding: 5px;
 }
-main.index p a{
+
+main.index p a {
     text-decoration: none;
-    font-weight: 870;
+    font-weight: 800;
 }
-main.index p a:hover{
+
+main.index p a:hover {
     text-shadow: 0 0 10px white;
 }
 
 
 /* Main content about.html */
-main.about{
+main.about {
     padding: 150px 100px;
 }
-main.about div{
+
+main.about div {
     display: flex;
     flex-direction: column;
     padding: 30px 30px;
@@ -148,11 +159,67 @@ main.about div{
     border-radius: 40px;
 }
 
-main.about div h2{
+main.about div h2 {
     margin-top: 20px;
 }
 
-main.about a:hover{
+main.about a:hover {
     text-shadow: 0 0 10px white;
 }
 
+
+@media (max-width: 800px) {
+
+    .name {
+        font-size: 1em;
+    }
+
+    main.index {
+        display: hidden;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .textbox {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width : 580px) {
+    .name{
+        display: none;
+    }
+    main.about{
+        padding: 150px 30px;
+    }
+    main.about div{
+        padding: 20px;
+    }
+    /* Socials Tab */
+div.social {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    height: 150px;
+    width: 25px;
+    top: 30vh;
+}
+
+div.sm img {
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+}
+
+div.sm img:hover {
+    background-color: var(--primary);
+    box-shadow: 0 0 10px white;
+    transition-property: background-color, box-shadow;
+    transition: 200ms ease-in;
+}
+}
