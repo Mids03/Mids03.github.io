@@ -116,7 +116,8 @@ main.index {
     margin: auto;
     width: 90vw;
     height: 90vh;
-    align-items: flex-start ;
+    padding-top: 60px;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -190,36 +191,39 @@ main.about a:hover {
 }
 
 @media (max-width : 580px) {
-    .name{
+    .name {
         display: none;
     }
-    main.about{
+
+    main.about {
         padding: 150px 30px;
     }
-    main.about div{
+
+    main.about div {
         padding: 20px;
     }
+
     /* Socials Tab */
-div.social {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    right: 0;
-    height: 150px;
-    width: 25px;
-    top: 30vh;
-}
+    div.social {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        right: 0;
+        height: 150px;
+        width: 25px;
+        top: 30vh;
+    }
 
-div.sm img {
-    width: 20px;
-    height: 20px;
-    border-radius: 6px;
-}
+    div.sm img {
+        width: 20px;
+        height: 20px;
+        border-radius: 6px;
+    }
 
-div.sm img:hover {
-    background-color: var(--primary);
-    box-shadow: 0 0 10px white;
-    transition-property: background-color, box-shadow;
-    transition: 200ms ease-in;
-}
+    div.sm img:hover {
+        background-color: var(--primary);
+        box-shadow: 0 0 10px white;
+        transition-property: background-color, box-shadow;
+        transition: 200ms ease-in;
+    }
 }
