@@ -125,7 +125,7 @@ nav a:hover {
 
 
 
-/* Main Text Area */
+/* Main Text Area General */
 main {
     margin: 3vw 10vw;
     padding: 30px;
@@ -133,4 +133,22 @@ main {
     border: 5px solid var(--secondary);
     border-radius: 30px;
     font-weight: 400;
+}
+
+main a {
+    color: var(--font-color);
+    font-weight: 700;
+}
+
+main a:hover {
+    text-shadow: 0 0 10px;
+}
+
+main p {
+    padding: 5px;
+}
+
+main h1,h2,h3,h4,h5,h6{
+    color: var(--elements);
+    font-weight: 900;
 }
