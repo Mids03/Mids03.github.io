@@ -82,7 +82,7 @@ nav a:hover {
     border: 5px solid var(--primary);
     border-radius: 1000px;
     transition-property: rotate, scale, translate;
-    transition: 200ms ease-out;
+    transition: 300ms ease-in-out;
 }
 
 .dp:hover {
@@ -176,4 +176,48 @@ div.image img{
 }
 div.list{
     padding: 20px;
+}
+
+/* Main text area contact.html */
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mail p{
+    font-size: larger;
+}
+
+
+/* footer */
+footer{
+    width: 100vw;    
+    position: fixed;
+    bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright{
+    display: inline-block;
+    width:max-content;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons img{
+    width: 30px;
+    margin: 10px;
+}
+.icons a:hover{
+    fill: orange;
 }
