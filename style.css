@@ -178,6 +178,26 @@ div.list{
     padding: 20px;
 }
 
+main.courses a{
+    text-decoration: none;    
+}
+
+main.courses a:hover{
+    text-shadow: 0 0 2px;
+}
+
+#course-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    height: 100px;
+    border: 5px solid var(--font-color);
+    border-radius: 30px;
+    background-color: var(--secondary);
+    margin: 20px;
+}
+
 /* Main text area contact.html */
 .contact{
     display: flex;
@@ -194,6 +214,8 @@ div.list{
 .mail p{
     font-size: larger;
 }
+
+
 
 
 /* footer */
